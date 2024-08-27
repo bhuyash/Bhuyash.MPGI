@@ -38,16 +38,18 @@ while ch.lower()=="yes":
 
   if att<90:
       med=input(("If you have any medical condition type yes:"))
-      new=int(input("How many days were you sick according to medical certificate:-"))
-      newatt=new*7
-      per=(newatt/500)*100
-      att=att+per
       
     
       if med.lower()=="yes":
-          if att>100:
+        
+        
+        new=int(input("How many days were you sick according to medical certificate:-"))
+        newatt=new*7
+        per=(newatt/500)*100
+        att=att+per
+        if att>100:
             print("Your attendance is exceeding 100 plese enter correct leave days")
-          else:
+        else:
              
              print("please submit your Medical certificate to the HOD with an application")
              
